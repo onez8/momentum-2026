@@ -18,36 +18,34 @@
     <title>예진이가 만든 거</title>
   </head>
   <body>
-    <div id="mobile-warning">
-      <h2>Please use a PC.</h2>
-      <p>This project is optimized for desktop screens.</p>
+    <form id="login-form" class="hidden">
+      <input required maxlength="10" type="text" placeholder="Name" />
+      <input type="submit" value="♥" />
+    </form>
+    <h2 id="clock">00:00:00</h2>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+      <input type="text" placeholder="To Do" />
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quote">
+      <span></span>
+      <span></span>
     </div>
-    <div id="app">
-      <form id="login-form" class="hidden">
-        <input required maxlength="10" type="text" placeholder="Name" />
-        <input type="submit" value="♥" />
-      </form>
-      <h2 id="clock">00:00:00</h2>
-      <h1 id="greeting" class="hidden"></h1>
-      <form id="todo-form">
-        <input type="text" placeholder="To Do" />
-      </form>
-      <ul id="todo-list"></ul>
-      <div id="quote">
-        <span></span>
-        <span></span>
-      </div>
-      <div id="weather">
-        <span></span>
-        <span></span>
-      </div>
-      <div id="memo">
-        <span>memo</span>
-        <i class="fa-regular fa-note-sticky fa-lg"></i>
-      </div>
-      <form id="memo-form" class="hidden">
-        <input type="text" placeholder="Write something..." />
-      </form>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <div id="memo">
+      <span>memo</span>
+      <i class="fa-regular fa-note-sticky fa-lg"></i>
+    </div>
+    <form id="memo-form" class="hidden">
+      <input type="text" placeholder="Write something..." />
+    </form>
+
+    <div id="mobile">
+      <h2>Please use a PC.</h2>
     </div>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
